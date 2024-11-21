@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="mediaqueries.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ruchika Yadav</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HAMBURGER CODE -->
+    <nav id="hamburger-nav">
+      <div class="logo">Ruchika Yadav</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE CODE -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic2.png" class="profile-pic" alt="Ruchika Yadav profile picture" />
+      </div>
+
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ruchika Yadav</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <a href="./assets/resume.pdf" download="resume.pdf" class="btn btn-color-2">
+      Download CV
+    </a>
+    
+    <!-- Contact Info Button -->
+    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+      Contact Info
+    </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/ruchika-yadav-228b1922b/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ruchika123yadav'"
+          />
+          <img
+            src="./assets/twitter-icon.png"
+            alt="My Twitter profile"
+            class="icon"
+            onclick="location.href='https://x.com/12_Ruchikayadav'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+
+    <!-- <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hello👋,I am currently pursuing my B.Tech in Computer Science and Engineering with a vibrant passion for coding and programming. My goal is to evolve into a versatile full-stack developer, dedicating my time to mastering the art of project creation and excelling in programming challenges.
+<br><br>
+              I am an open-source enthusiast and a skilled MERN Stack Developer ,I am deepening my expertise in Web Development and Data Structures & Algorithms. I am eager to connect with like-minded individuals and explore exciting web development projects and internship opportunities that will allow me to contribute meaningfully and grow within the software development realm.
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section> -->
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="container">
+      <!-- About Section -->
+      <div class="about-section">
+       
+        <p>
+          <!-- Yahan apna about text likhna -->
+          Hello👋,I am currently pursuing my B.Tech in Computer Science and Engineering with a vibrant passion for coding and programming. My goal is to evolve into a versatile full-stack developer, dedicating my time to mastering the art of project creation and excelling in programming challenges.
+          <br><br>
+                        I am an open-source enthusiast and a skilled MERN Stack Developer ,I am deepening my expertise in Web Development and Data Structures & Algorithms. I am eager to connect with like-minded individuals and explore exciting web development projects and internship opportunities that will allow me to contribute meaningfully and grow within the software development realm.
+           </p>
+      </div>
+  
+      <!-- Education Section -->
+      <div class="education-section">
+        <div class="details">
+        <h2>Education</h2>
+        <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+            </div>
+        <div class="education-box">
+          <div class="education-item">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p>Institute of Engineering and Rural Technology, Prayagraj</p>
+            <p><strong>Year:</strong> 2021-2025</p>
+            <p><strong>SGPA:</strong> 8.01</p>
+          </div>
+          <div class="education-item">
+            <h3>12th Grade</h3>
+            <p>North Central Railway College, Tundla</p>
+            <p><strong>Year:</strong> 2019-2020</p>
+            <p><strong>Percentage:</strong> 87%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technologies</h1>
+      <div class="technologies">
+
+        <div class="technologies">
+          <div class="tech-item">
+              <i class="fab fa-html5"></i>
+              <p>HTML</p>
+          </div>
+          <div class="tech-item">
+              <i class="fab fa-css3-alt"></i>
+              <p>CSS</p>
+          </div>
+          <div class="tech-item">
+              <i class="fab fa-js"></i>
+              <p>JavaScript</p>
+          </div>
+          <div class="tech-item">
+              <i class="fab fa-git-alt"></i>
+              <p>Git</p>
+          </div>
+          <div class="tech-item">
+              <i class="fab fa-github"></i>
+              <p>GitHub</p>
+          </div>
+          <div class="tech-item">
+              <i class="fab fa-react"></i>
+              <p>React JS</p>
+          </div>
+          <div class="tech-item">
+              <i class="fab fa-node"></i>
+              <p>Node JS</p>
+          </div>
+          <div class="tech-item">
+              <i class="fab fa-css3"></i>
+              <p>Tailwind CSS</p>
+          </div>
+          <div class="tech-item">
+              <i class="fas fa-database"></i>
+              <p>MongoDB</p>
+          </div>
+          <div class="tech-item">
+              <i class="fas fa-server"></i>
+              <p>Express JS</p>
+          </div>
+
+          <div class="tech-item">
+            <i class="fab fa-bootstrap"></i>
+            <p>Bootstrap</p>
+          </div>
+          <div class="tech-item">
+            <i class="material-icons">widgets</i>
+            <p>Material Icons</p>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-java"></i>
+            <p>Java</p>
+          </div>
+          <div class="tech-item">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+          </div>
+          <div class="tech-item">
+            <i class="fas fa-leaf"></i>
+            <p>Django</p>
+          </div>
+          <div class="tech-item">
+            <i class="fas fa-database"></i>
+            <p>MySQL</p>
+          </div>
+
+      </div>
+
+
+
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+
+
+    <!-- Projects -->
+
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TranquilStay</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ruchika123yadav/TranquilStay-Complete-Listing-Booking-Platform.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">EduConnect</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ruchika123yadav/EduConnect-React.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Spotify Clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ruchika123yadav/Spotify-Clone.git'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ruchikayadav.tech@gmail.com">ruchikayadav.tech@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ruchika-yadav-228b1922b/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Ruchika Yadav. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
